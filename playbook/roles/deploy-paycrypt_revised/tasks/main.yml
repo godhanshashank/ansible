@@ -1,0 +1,5 @@
+---
+- name: paycrypt_revised deploy
+  import_tasks: paycrypt_revised.yml
+  tags:
+    - deploy

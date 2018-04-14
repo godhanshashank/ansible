@@ -1,0 +1,7 @@
+---
+- name: clone paycrypt_revised   repo
+  git: repo={{ paycrypt_repo_url }} version={{ paycrypt_repo_version }} dest={{ paycrypt_www_dir }}/{{ paycrypt_release_id }}
+    recursive=yes track_submodules=yes accept_hostkey=yes force=yes key_file={{ all_git_key }}
+  register: code_deoployed
+  tags:
+    - code-deploy

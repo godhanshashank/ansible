@@ -1,0 +1,13 @@
+#####################
+#  deploy-paycrypt  #
+#####################
+
+paycrypt_repo_url: git@gitlab.com:paycrypt_penny/paycrypt_revised.git
+
+## master
+paycrypt_repo_version: master
+
+#
+paycrypt_dir: /var/www
+paycrypt_www_dir: /var/www/html/test
+paycrypt_release_id: paycrypt_revised

@@ -1,0 +1,11 @@
+---
+all_git_key: /home/ubuntu/.ssh/id_rsa_git_all
+devops_git_key: /home/ubuntu/.ssh/devops_git_key
+## General Variables
+user: ubuntu
+www_user: www-data
+zsh_theme: steeef
+
+
+ansible_managed: shashank
+

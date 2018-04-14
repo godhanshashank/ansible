@@ -1,0 +1,86 @@
+2018-04-11 12:03:10,842 p=10452 u=shashank |  PLAY [paycrypt_revised] ***********************************************************************************************************************
+2018-04-11 12:03:11,170 p=10452 u=shashank |  TASK [Gathering Facts] ************************************************************************************************************************
+2018-04-11 12:03:11,171 p=10452 u=shashank |  Wednesday 11 April 2018  12:03:11 +0530 (0:00:00.706)       0:00:00.706 ******* 
+2018-04-11 12:03:14,536 p=10452 u=shashank |  ok: [13.127.235.223]
+2018-04-11 12:03:14,565 p=10452 u=shashank |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] ********************************************************************************
+2018-04-11 12:03:14,565 p=10452 u=shashank |  Wednesday 11 April 2018  12:03:14 +0530 (0:00:03.394)       0:00:04.101 ******* 
+2018-04-11 12:03:14,617 p=10452 u=shashank |  fatal: [13.127.235.223]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'all_git_key' is undefined\n\nThe error appears to have been in '/home/shashank/ansible/playbook/roles/deploy-paycrypt_revised/tasks/paycrypt_revised.yml': line 2, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n---\n- name: clone paycrypt_revised   repo\n  ^ here\n"}
+2018-04-11 12:03:14,620 p=10452 u=shashank |  	to retry, use: --limit @/home/shashank/ansible/_logs/ssh/retry/paycrypt_revised.retry
+
+2018-04-11 12:03:14,620 p=10452 u=shashank |  PLAY RECAP ************************************************************************************************************************************
+2018-04-11 12:03:14,620 p=10452 u=shashank |  13.127.235.223             : ok=1    changed=0    unreachable=0    failed=1   
+2018-04-11 12:03:14,620 p=10452 u=shashank |  Wednesday 11 April 2018  12:03:14 +0530 (0:00:00.055)       0:00:04.156 ******* 
+2018-04-11 12:03:14,621 p=10452 u=shashank |  =============================================================================== 
+2018-04-11 12:03:14,621 p=10452 u=shashank |  Gathering Facts ------------------------------------------------------------------------------------------------------------------------ 3.39s
+2018-04-11 12:03:14,621 p=10452 u=shashank |  deploy-paycrypt_revised : clone paycrypt_revised   repo -------------------------------------------------------------------------------- 0.06s
+2018-04-11 12:21:03,578 p=11117 u=shashank |  PLAY [paycrypt_revised] ***********************************************************************************************************************
+2018-04-11 12:21:04,147 p=11117 u=shashank |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] ********************************************************************************
+2018-04-11 12:21:04,148 p=11117 u=shashank |  Wednesday 11 April 2018  12:21:04 +0530 (0:00:01.234)       0:00:01.234 ******* 
+2018-04-11 12:21:09,470 p=11117 u=shashank |  fatal: [13.127.235.223]: FAILED! => {"changed": false, "cmd": "/usr/bin/git clone --origin origin '' /var/www/html/test/paycrypt_revised", "msg": "Cloning into '/var/www/html/test/paycrypt_revised'...\nWarning: Identity file /home/ubuntu/.ssh/id_rsa_git_all not accessible: No such file or directory.\nPermission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.", "rc": 128, "stderr": "Cloning into '/var/www/html/test/paycrypt_revised'...\nWarning: Identity file /home/ubuntu/.ssh/id_rsa_git_all not accessible: No such file or directory.\nPermission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n", "stderr_lines": ["Cloning into '/var/www/html/test/paycrypt_revised'...", "Warning: Identity file /home/ubuntu/.ssh/id_rsa_git_all not accessible: No such file or directory.", "Permission denied (publickey).", "fatal: Could not read from remote repository.", "", "Please make sure you have the correct access rights", "and the repository exists."], "stdout": "", "stdout_lines": []}
+2018-04-11 12:21:09,521 p=11117 u=shashank |  	to retry, use: --limit @/home/shashank/ansible/_logs/ssh/retry/paycrypt_revised.retry
+
+2018-04-11 12:21:09,522 p=11117 u=shashank |  PLAY RECAP ************************************************************************************************************************************
+2018-04-11 12:21:09,522 p=11117 u=shashank |  13.127.235.223             : ok=0    changed=0    unreachable=0    failed=1   
+2018-04-11 12:21:09,523 p=11117 u=shashank |  Wednesday 11 April 2018  12:21:09 +0530 (0:00:05.375)       0:00:06.610 ******* 
+2018-04-11 12:21:09,524 p=11117 u=shashank |  =============================================================================== 
+2018-04-11 12:21:09,524 p=11117 u=shashank |  deploy-paycrypt_revised : clone paycrypt_revised   repo -------------------------------------------------------------------------------- 5.38s
+2018-04-11 12:24:50,112 p=11288 u=shashank |  PLAY [paycrypt_revised] ***********************************************************************************************************************
+2018-04-11 12:24:50,593 p=11288 u=shashank |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] ********************************************************************************
+2018-04-11 12:24:50,593 p=11288 u=shashank |  Wednesday 11 April 2018  12:24:50 +0530 (0:00:00.825)       0:00:00.825 ******* 
+2018-04-11 12:25:10,197 p=11288 u=shashank |  changed: [13.127.235.223]
+2018-04-11 12:25:10,224 p=11288 u=shashank |  PLAY RECAP ************************************************************************************************************************************
+2018-04-11 12:25:10,224 p=11288 u=shashank |  13.127.235.223             : ok=1    changed=1    unreachable=0    failed=0   
+2018-04-11 12:25:10,225 p=11288 u=shashank |  Wednesday 11 April 2018  12:25:10 +0530 (0:00:19.632)       0:00:20.457 ******* 
+2018-04-11 12:25:10,226 p=11288 u=shashank |  =============================================================================== 
+2018-04-11 12:25:10,226 p=11288 u=shashank |  deploy-paycrypt_revised : clone paycrypt_revised   repo ------------------------------------------------------------------------------- 19.63s
+2018-04-11 12:36:47,792 p=11677 u=root |  PLAY [paycrypt_revised] ********************************************************
+2018-04-11 12:36:48,192 p=11677 u=root |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] *****************
+2018-04-11 12:36:48,193 p=11677 u=root |  Wednesday 11 April 2018  12:36:48 +0530 (0:00:00.700)       0:00:00.700 ******* 
+2018-04-11 12:36:49,222 p=11677 u=root |  fatal: [13.127.235.223]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"13.127.235.223\". Make sure this host can be reached over ssh", "unreachable": true}
+2018-04-11 12:36:49,243 p=11677 u=root |  	to retry, use: --limit @/home/shashank/ansible/_logs/ssh/retry/paycrypt_revised.retry
+
+2018-04-11 12:36:49,243 p=11677 u=root |  PLAY RECAP *********************************************************************
+2018-04-11 12:36:49,244 p=11677 u=root |  13.127.235.223             : ok=0    changed=0    unreachable=1    failed=0   
+2018-04-11 12:36:49,245 p=11677 u=root |  Wednesday 11 April 2018  12:36:49 +0530 (0:00:01.052)       0:00:01.753 ******* 
+2018-04-11 12:36:49,246 p=11677 u=root |  =============================================================================== 
+2018-04-11 12:36:49,247 p=11677 u=root |  deploy-paycrypt_revised : clone paycrypt_revised   repo ----------------- 1.05s
+2018-04-11 12:56:41,252 p=12365 u=root |  PLAY [paycrypt_revised] ********************************************************
+2018-04-11 12:56:41,632 p=12365 u=root |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] *****************
+2018-04-11 12:56:41,632 p=12365 u=root |  Wednesday 11 April 2018  12:56:41 +0530 (0:00:00.781)       0:00:00.781 ******* 
+2018-04-11 12:56:49,930 p=12365 u=root |  ok: [13.127.235.223]
+2018-04-11 12:56:49,937 p=12365 u=root |  PLAY RECAP *********************************************************************
+2018-04-11 12:56:49,938 p=12365 u=root |  13.127.235.223             : ok=1    changed=0    unreachable=0    failed=0   
+2018-04-11 12:56:49,939 p=12365 u=root |  Wednesday 11 April 2018  12:56:49 +0530 (0:00:08.306)       0:00:09.087 ******* 
+2018-04-11 12:56:49,939 p=12365 u=root |  =============================================================================== 
+2018-04-11 12:56:49,940 p=12365 u=root |  deploy-paycrypt_revised : clone paycrypt_revised   repo ----------------- 8.31s
+2018-04-11 12:56:51,301 p=12396 u=root |  PLAY [paycrypt_revised] ********************************************************
+2018-04-11 12:56:51,322 p=12396 u=root |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] *****************
+2018-04-11 12:56:51,322 p=12396 u=root |  Wednesday 11 April 2018  12:56:51 +0530 (0:00:00.052)       0:00:00.052 ******* 
+2018-04-11 12:56:57,142 p=12396 u=root |  ok: [13.127.235.223]
+2018-04-11 12:56:57,150 p=12396 u=root |  PLAY RECAP *********************************************************************
+2018-04-11 12:56:57,151 p=12396 u=root |  13.127.235.223             : ok=1    changed=0    unreachable=0    failed=0   
+2018-04-11 12:56:57,152 p=12396 u=root |  Wednesday 11 April 2018  12:56:57 +0530 (0:00:05.829)       0:00:05.881 ******* 
+2018-04-11 12:56:57,153 p=12396 u=root |  =============================================================================== 
+2018-04-11 12:56:57,153 p=12396 u=root |  deploy-paycrypt_revised : clone paycrypt_revised   repo ----------------- 5.83s
+2018-04-11 12:58:43,521 p=12520 u=root |  PLAY [paycrypt_revised] ********************************************************
+2018-04-11 12:58:43,893 p=12520 u=root |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] *****************
+2018-04-11 12:58:43,893 p=12520 u=root |  Wednesday 11 April 2018  12:58:43 +0530 (0:00:00.664)       0:00:00.664 ******* 
+2018-04-11 12:59:00,529 p=12520 u=root |  changed: [13.127.235.223]
+2018-04-11 12:59:00,535 p=12520 u=root |  PLAY RECAP *********************************************************************
+2018-04-11 12:59:00,536 p=12520 u=root |  13.127.235.223             : ok=1    changed=1    unreachable=0    failed=0   
+2018-04-11 12:59:00,537 p=12520 u=root |  Wednesday 11 April 2018  12:59:00 +0530 (0:00:16.643)       0:00:17.308 ******* 
+2018-04-11 12:59:00,538 p=12520 u=root |  =============================================================================== 
+2018-04-11 12:59:00,538 p=12520 u=root |  deploy-paycrypt_revised : clone paycrypt_revised   repo ---------------- 16.64s
+2018-04-11 18:53:47,734 p=14561 u=root |  PLAY [paycrypt_revised] ********************************************************
+2018-04-11 18:53:48,082 p=14561 u=root |  TASK [Gathering Facts] *********************************************************
+2018-04-11 18:53:48,083 p=14561 u=root |  Wednesday 11 April 2018  18:53:48 +0530 (0:00:00.737)       0:00:00.737 ******* 
+2018-04-11 18:53:51,544 p=14561 u=root |  ok: [13.127.235.223]
+2018-04-11 18:53:51,573 p=14561 u=root |  TASK [deploy-paycrypt_revised : clone paycrypt_revised   repo] *****************
+2018-04-11 18:53:51,574 p=14561 u=root |  Wednesday 11 April 2018  18:53:51 +0530 (0:00:03.491)       0:00:04.229 ******* 
+2018-04-11 18:54:07,533 p=14561 u=root |  changed: [13.127.235.223]
+2018-04-11 18:54:07,557 p=14561 u=root |  PLAY RECAP *********************************************************************
+2018-04-11 18:54:07,557 p=14561 u=root |  13.127.235.223             : ok=2    changed=1    unreachable=0    failed=0   
+2018-04-11 18:54:07,558 p=14561 u=root |  Wednesday 11 April 2018  18:54:07 +0530 (0:00:15.984)       0:00:20.213 ******* 
+2018-04-11 18:54:07,559 p=14561 u=root |  =============================================================================== 
+2018-04-11 18:54:07,559 p=14561 u=root |  deploy-paycrypt_revised : clone paycrypt_revised   repo ---------------- 15.99s
+2018-04-11 18:54:07,560 p=14561 u=root |  Gathering Facts --------------------------------------------------------- 3.49s
