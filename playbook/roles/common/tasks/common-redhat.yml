@@ -1,0 +1,20 @@
+---
+- name: install system pakcages and utils
+  yum: name={{ item }} state=latest update_cache=yes
+  with_items:
+   - ntp
+   - openssl
+   - git
+   - git-core
+   - awscli
+   - golang
+   - goaccess
+   - htop
+   - rsyslog
+   - zip
+   - vim
+   - vim-common
+   - curl
+   - figlet
+   - multitail
+   - python-pip

@@ -1,0 +1,7 @@
+---
+- hosts: kashif
+  remote_user: kashif
+  become: true
+  roles:
+      - { role: common,                   tags: [ 'common'      ]}
+      # - { role: deploy-changelly,         tags: [ 'deploy-code' ]}

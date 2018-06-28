@@ -1,0 +1,27 @@
+---
+- name: dpkg --configure -a
+  shell: dpkg --configure -a
+
+- name: install system pakcages and utils
+  apt: name={{ item }} state=latest update_cache=yes cache_valid_time=54000 allow_unauthenticated=yes
+  with_items:
+   - ntp
+   - openssl
+   - git
+   - git-core
+   - golang
+   - goaccess
+   - htop
+   - rsyslog
+   - zip
+   - vim
+   - vim-common
+   - curl
+   - multitail
+   - upstart
+   - figlet
+   - python-pip
+   - python-software-properties
+   - apt-transport-https
+   - libfontconfig
+   - libjson-xs-perl

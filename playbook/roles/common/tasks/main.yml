@@ -1,0 +1,50 @@
+---
+- name: include common debian
+  import_tasks: common-debian.yml
+  when: ansible_os_family == 'Debian'
+  tags:
+    - common-deploy
+
+- name: include common redhat
+  import_tasks: common-redhat.yml
+  when: ansible_os_family == 'RedHat'
+  tags:
+    - common-deploy
+
+- name: include limits
+  import_tasks: limits.yml
+  vars:
+    # todo hotfix till ansible python3 release fix
+    ansible_python_interpreter: /usr/bin/python
+  tags:
+    - limits-deploy
+
+- name: include zsh ubuntu
+  import_tasks: zsh.yml
+  vars:
+    user: kashif
+  when: ansible_os_family == 'Debian'
+  tags:
+    - zsh-deploy
+
+- name: include zsh centos
+  import_tasks: zsh.yml
+  vars:
+    user: centos
+  when: ansible_os_family == 'RedHat'
+  tags:
+    - zsh-deploy
+
+- name: include zshroot
+  import_tasks: zsh.yml
+  vars:
+    user: root
+    home_dir: '/'
+  tags:
+    - zsh-deploy
+
+- name: include keys
+  import_tasks: keys.yml
+  tags:
+    - keys-deploy
+
